@@ -1,10 +1,10 @@
 import 'dart:async';
 
 import 'package:bookly/core/routes_manager.dart';
-import 'package:bookly/presentation/widgets/sliding_splash_text.dart';
+import 'package:bookly/presentation/widgets/spalsh/sliding_splash_text.dart';
 import 'package:flutter/cupertino.dart';
 
-import '../../core/assets_manager.dart';
+import '../../../core/assets_manager.dart';
 
 class SplashBody extends StatefulWidget {
   const SplashBody({super.key});

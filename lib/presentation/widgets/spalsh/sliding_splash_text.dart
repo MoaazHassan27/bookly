@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-import '../../core/app_styles.dart';
+import '../../../core/app_styles.dart';
 
 class SlidingSplashText extends StatelessWidget {
   const SlidingSplashText({super.key, required this.slideAnimation});

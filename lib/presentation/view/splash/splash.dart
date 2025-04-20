@@ -1,4 +1,4 @@
-import 'package:bookly/presentation/widgets/splash_body.dart';
+import 'package:bookly/presentation/widgets/spalsh/splash_body.dart';
 import 'package:flutter/material.dart';
 
 class Splash extends StatefulWidget {
