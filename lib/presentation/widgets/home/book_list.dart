@@ -13,7 +13,7 @@ class BookList extends StatelessWidget {
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) => Padding(
-          padding: REdgeInsets.only(left: 10, right: 10),
+          padding: REdgeInsets.only(left: 7, right: 7),
           child: BookItem(),
         ),
       ),

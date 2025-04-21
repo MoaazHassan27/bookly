@@ -23,9 +23,15 @@ abstract class Appstyle {
     fontWeight: FontWeight.w400,
     fontSize: 14.sp,
     color: Colors.grey,
-  );static TextStyle bestSellerItemPrice = GoogleFonts.montserrat(
+  );
+  static TextStyle bestSellerItemPrice = GoogleFonts.montserrat(
     fontWeight: FontWeight.w700,
     fontSize: 20.sp,
+    color: Colors.white,
+  );
+  static TextStyle bookDetailsTitle = GoogleFonts.ledger(
+    fontWeight: FontWeight.w400,
+    fontSize: 30.sp,
     color: Colors.white,
   );
 }

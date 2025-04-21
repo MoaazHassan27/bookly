@@ -8,14 +8,17 @@ class CoustomAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(children: [
-      Image.asset(AssetsManager.logo, width: 80.w),
-      Spacer(),
-      Icon(
-        Icons.search,
-        size: 25.sp,
-        color: Colors.white,
-      ),
-    ]);
+    return Padding(
+      padding:  REdgeInsets.symmetric(horizontal: 30),
+      child: Row(children: [
+        Image.asset(AssetsManager.logo, width: 80.w),
+        Spacer(),
+        Icon(
+          Icons.search,
+          size: 25.sp,
+          color: Colors.white,
+        ),
+      ]),
+    );
   }
 }

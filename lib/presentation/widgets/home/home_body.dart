@@ -15,17 +15,23 @@ class HomeBody extends StatelessWidget {
       slivers: [
         SliverToBoxAdapter(
           child: Padding(
-            padding: REdgeInsets.only(top: 40, left: 30, right: 30),
+            padding: REdgeInsets.only(top: 40),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 CoustomAppBar(),
                 SizedBox(height: 30.h),
-                BookList(),
+                Padding(
+                  padding:  REdgeInsets.only(left: 20),
+                  child: BookList(),
+                ),
                 SizedBox(height: 30.h),
-                Text(
-                  'Best Seller',
-                  style: Appstyle.bestSellerText,
+                Padding(
+                  padding:  REdgeInsets.only(left: 20),
+                  child: Text(
+                    'Best Seller',
+                    style: Appstyle.bestSellerText,
+                  ),
                 ),
                 SizedBox(height: 10.h),
                 const BestsellerList(),
