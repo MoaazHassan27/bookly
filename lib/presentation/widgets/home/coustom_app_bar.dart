@@ -1,3 +1,4 @@
+import 'package:bookly/core/routes_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -9,14 +10,19 @@ class CoustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:  REdgeInsets.symmetric(horizontal: 30),
+      padding: REdgeInsets.symmetric(horizontal: 30),
       child: Row(children: [
         Image.asset(AssetsManager.logo, width: 80.w),
         Spacer(),
-        Icon(
-          Icons.search,
-          size: 25.sp,
-          color: Colors.white,
+        IconButton(
+          onPressed: () {
+            Navigator.pushNamed(context, RoutesManager.search);
+          },
+          icon: Icon(
+            Icons.search,
+            size: 25.sp,
+            color: Colors.white,
+          ),
         ),
       ]),
     );
